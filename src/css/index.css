@@ -39,3 +39,13 @@ li a:hover {
   background-color: #111111;
 }
 
+.current:link
+{
+  background-color: #23db9e;
+}
+
+.about-section {
+padding: 50px;
+text-align: center;
+color: white;
+  }

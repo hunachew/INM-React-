@@ -4,12 +4,10 @@ import './../css/App.css';
 export default function Projects()  {
   return (
     <div className="App project">
-      <header className="App-header">
-  
-       
-        <p>
-          Projects 
-        </p>
+      <header className="App-header"> 
+      <div class="about-section">
+          <h1>Projects</h1>
+      </div>
         <a
           className="App-link"
           href="https://reactjs.org"

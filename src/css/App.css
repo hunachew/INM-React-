@@ -33,13 +33,15 @@
   background-color: rgb(56, 117, 230);
 }
 .contact .App-header{
-  background-color: rgb(111, 65, 185);
+  background-color: rgb(34, 86, 184);;
 }
 .home .App-header{
   background-color: rgb(62, 65, 60);
-  
+
 }
-.project .App-header {
+.project .App-header{
+  background-color: rgb(21, 67, 151);
+
 }
 .App-home {
  text-align: center;
@@ -47,6 +49,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {

@@ -3,7 +3,7 @@ import {
   BrowserRouter as Foobar,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
@@ -17,16 +17,16 @@ export default function App()  {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink exact to="/" activeClassName ="current">Home</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink exact to="/about"  activeClassName ="current">About</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink exact to="/contact" activeClassName ="current">Contact</NavLink>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <NavLink  exact to="/projects" activeClassName ="current">Projects</NavLink>
           </li>
         </ul>
       </nav>
@@ -35,20 +35,15 @@ export default function App()  {
       <Switch>
         <Route path="/about">
           {<About />}
-      
         </Route>
         <Route path="/contact">
-          { <Contact />}
-          
+          {<Contact />}
           </Route>
         <Route path="/projects">
-          { <Projects/>}
-          
-          
+          {<Projects/>} 
         </Route>
         <Route path="/">
          {<Home />}
-        
         </Route>
       </Switch>
     </div>
