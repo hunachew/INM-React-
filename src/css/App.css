@@ -10,8 +10,14 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    width: 268px;
+    height: 140px;
+    position:relative;
+    top: 10px;
+    z-index: 1000;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -23,7 +29,21 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.about .App-header{
+  background-color: rgb(56, 117, 230);
+}
+.contact .App-header{
+  background-color: rgb(111, 65, 185);
+}
+.home .App-header{
+  background-color: rgb(62, 65, 60);
+  
+}
+.project .App-header {
+}
+.App-home {
+ text-align: center;
+}
 .App-link {
   color: #61dafb;
 }
